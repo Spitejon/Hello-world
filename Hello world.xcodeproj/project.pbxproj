@@ -12,6 +12,7 @@
 		CE7C8FA21CAFCF4D00FCDDF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7C8FA01CAFCF4D00FCDDF1 /* Main.storyboard */; };
 		CE7C8FA41CAFCF4D00FCDDF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7C8FA31CAFCF4D00FCDDF1 /* Assets.xcassets */; };
 		CE7C8FA71CAFCF4D00FCDDF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7C8FA51CAFCF4D00FCDDF1 /* LaunchScreen.storyboard */; };
+		CE7C8FAF1CB0009100FCDDF1 /* ConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C8FAE1CB0009100FCDDF1 /* ConverterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		CE7C8FA31CAFCF4D00FCDDF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE7C8FA61CAFCF4D00FCDDF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE7C8FA81CAFCF4D00FCDDF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE7C8FAE1CB0009100FCDDF1 /* ConverterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				CE7C8F9C1CAFCF4D00FCDDF1 /* AppDelegate.swift */,
 				CE7C8F9E1CAFCF4D00FCDDF1 /* ViewController.swift */,
 				CE7C8FA01CAFCF4D00FCDDF1 /* Main.storyboard */,
+				CE7C8FAE1CB0009100FCDDF1 /* ConverterViewController.swift */,
 				CE7C8FA31CAFCF4D00FCDDF1 /* Assets.xcassets */,
 				CE7C8FA51CAFCF4D00FCDDF1 /* LaunchScreen.storyboard */,
 				CE7C8FA81CAFCF4D00FCDDF1 /* Info.plist */,
@@ -137,6 +140,7 @@
 			files = (
 				CE7C8F9F1CAFCF4D00FCDDF1 /* ViewController.swift in Sources */,
 				CE7C8F9D1CAFCF4D00FCDDF1 /* AppDelegate.swift in Sources */,
+				CE7C8FAF1CB0009100FCDDF1 /* ConverterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +292,7 @@
 				CE7C8FAD1CAFCF4D00FCDDF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

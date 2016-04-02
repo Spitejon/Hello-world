@@ -83,7 +83,7 @@
         <!--Конвертер-->
         <scene sceneID="vRf-6I-s3D">
             <objects>
-                <viewController id="ENr-MF-v7E" sceneMemberID="viewController">
+                <viewController id="ENr-MF-v7E" customClass="ConverterViewController" customModule="Hello_world" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IiD-xa-Clk"/>
                         <viewControllerLayoutGuide type="bottom" id="5Ov-0O-dpw"/>
@@ -92,7 +92,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ybh-wK-U0E">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ybh-wK-U0E" userLabel="ContainerView">
                                 <rect key="frame" x="26" y="110" width="363" height="117"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZaV-cX-GfE">
@@ -101,13 +101,16 @@
                                         <state key="normal" title="&gt;">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="RUBinUSD:" destination="ENr-MF-v7E" eventType="touchUpInside" id="JRR-Tu-ZuY"/>
+                                        </connections>
                                     </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="seS-t0-uzb">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Доллары" textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="seS-t0-uzb" userLabel="RightTextBox">
                                         <rect key="frame" x="246" y="44" width="97" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c8O-Ie-PKm">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Рубля" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c8O-Ie-PKm" userLabel="LeftTextBox">
                                         <rect key="frame" x="20" y="44" width="97" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -118,6 +121,9 @@
                                         <state key="normal" title="&lt;">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="USDtoRUB:" destination="ENr-MF-v7E" eventType="touchUpInside" id="0bM-KO-wDW"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.3293325136725801" green="0.43542662874412119" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
@@ -146,6 +152,10 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Конвертер" id="SsP-KK-x5Q"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="InputRUB" destination="c8O-Ie-PKm" id="mh9-No-SzW"/>
+                        <outlet property="InputUSD" destination="seS-t0-uzb" id="KTZ-JY-yOf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hTT-By-wrn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
