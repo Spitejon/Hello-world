@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Tab Bar Controller-->
@@ -23,7 +24,7 @@
             </objects>
             <point key="canvasLocation" x="-198" y="756"/>
         </scene>
-        <!--ПЕрвый проект-->
+        <!--Первый проект-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hello_world" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,7 +33,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Js1-Ne-jpg">
@@ -68,8 +69,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="ПЕрвый проект" id="iYp-cq-SDt"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <tabBarItem key="tabBarItem" title="Первый проект" id="iYp-cq-SDt"/>
                     <connections>
                         <outlet property="LabelField" destination="LYz-Yh-HCD" id="tDK-0y-kyH"/>
                         <outlet property="Resault" destination="kjO-gy-yFV" id="30e-xy-7dZ"/>
@@ -91,7 +91,58 @@
                     <view key="view" contentMode="scaleToFill" id="3Kh-IZ-l6l">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ybh-wK-U0E">
+                                <rect key="frame" x="26" y="110" width="363" height="117"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZaV-cX-GfE">
+                                        <rect key="frame" x="167" y="20" width="30" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="&gt;">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="seS-t0-uzb">
+                                        <rect key="frame" x="246" y="44" width="97" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c8O-Ie-PKm">
+                                        <rect key="frame" x="20" y="44" width="97" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vs3-bb-OiH">
+                                        <rect key="frame" x="167" y="67" width="30" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="&lt;">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.3293325136725801" green="0.43542662874412119" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="seS-t0-uzb" firstAttribute="centerY" secondItem="Ybh-wK-U0E" secondAttribute="centerY" id="0Vg-jT-5Zv"/>
+                                    <constraint firstItem="seS-t0-uzb" firstAttribute="leading" secondItem="Ybh-wK-U0E" secondAttribute="leading" constant="246" id="1jM-L8-9pa"/>
+                                    <constraint firstItem="ZaV-cX-GfE" firstAttribute="centerX" secondItem="Vs3-bb-OiH" secondAttribute="centerX" id="5IZ-kW-7Up"/>
+                                    <constraint firstItem="ZaV-cX-GfE" firstAttribute="centerX" secondItem="Ybh-wK-U0E" secondAttribute="centerX" id="JHH-IT-vU7"/>
+                                    <constraint firstItem="seS-t0-uzb" firstAttribute="width" secondItem="c8O-Ie-PKm" secondAttribute="width" id="Jc0-Yx-jY0"/>
+                                    <constraint firstAttribute="height" constant="117" id="NSN-nf-mt5"/>
+                                    <constraint firstItem="seS-t0-uzb" firstAttribute="centerY" secondItem="c8O-Ie-PKm" secondAttribute="centerY" id="SIh-nv-DD8"/>
+                                    <constraint firstAttribute="trailing" secondItem="seS-t0-uzb" secondAttribute="trailing" constant="20" id="dZe-ew-VoG"/>
+                                    <constraint firstItem="Vs3-bb-OiH" firstAttribute="top" secondItem="ZaV-cX-GfE" secondAttribute="bottom" constant="17" id="fpq-gb-EPi"/>
+                                    <constraint firstItem="ZaV-cX-GfE" firstAttribute="top" secondItem="Ybh-wK-U0E" secondAttribute="top" constant="20" id="hHn-gA-fO0"/>
+                                    <constraint firstItem="seS-t0-uzb" firstAttribute="height" secondItem="c8O-Ie-PKm" secondAttribute="height" id="mS0-f3-Jg9"/>
+                                    <constraint firstItem="seS-t0-uzb" firstAttribute="leading" secondItem="c8O-Ie-PKm" secondAttribute="trailing" constant="129" id="wa4-rv-Zlv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66666666666666663" green="0.60997140624977586" blue="0.54060312725518445" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ybh-wK-U0E" secondAttribute="trailing" constant="5" id="4DF-eJ-PDC"/>
+                            <constraint firstItem="Ybh-wK-U0E" firstAttribute="top" secondItem="IiD-xa-Clk" secondAttribute="bottom" constant="90" id="8fp-rq-poT"/>
+                            <constraint firstItem="Ybh-wK-U0E" firstAttribute="leading" secondItem="3Kh-IZ-l6l" secondAttribute="leadingMargin" constant="6" id="zY5-Ys-Kve"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Конвертер" id="SsP-KK-x5Q"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
